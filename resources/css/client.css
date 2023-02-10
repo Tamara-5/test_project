@@ -1,0 +1,110 @@
+form {
+    width: 500px;
+    margin: 50px auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+.tabs {
+    width: 500px;
+    height: 300px;
+}
+
+.tab-header {
+    display: flex;
+    width: 100vw;
+}
+
+.tab-header-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.tab-header-item.active {
+    border-bottom: 2px solid #000;
+    transition: 0.3s;
+}
+
+.tab-content {
+    display: flex;
+    width: 100vw;
+}
+
+.tab-item {
+    flex: 1;
+    display: none;
+    padding: 10px;
+}
+
+.tab-item.active {
+    display: block;
+}
+
+
+.center{
+    text-align: center;
+}
+
+.editClient{
+    width: 45%;
+    height: 25px;
+    color: #fff;
+    background: #78B7B7;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.deleteClient{
+    width: 45%;
+    height: 25px;
+    color: #fff;
+    background: #CC0800;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+@import "login";
+@import "clients_table";
+@import "client";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: normal 18px "Open Sans", sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+h3{
+    text-align: center;
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+header > nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+header > nav > a {
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+header > nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+header > nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.dashboard_section,
+.clients_section, .reports_section {
+    padding: 20px 15px;
+}
+
+td, th, tr {
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+}
+
+th{
+    text-align: center;
+}
