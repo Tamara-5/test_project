@@ -1,5 +1,8 @@
 const headerItems = document.querySelectorAll('.tab-header-item');
 const tabItems = document.querySelectorAll('.tab-item');
+if (!localStorage.activeTab) {
+  localStorage.activeTab = 'tab-1'
+}
 const element = document.querySelector(`[data-tab="${localStorage.activeTab}"]`);
 element?.classList.add('active');
 const activatedTab = document.querySelector(`#${localStorage.activeTab}`)?.classList.add('active');

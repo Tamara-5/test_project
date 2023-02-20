@@ -85,6 +85,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var _document$querySelect;
 var headerItems = document.querySelectorAll('.tab-header-item');
 var tabItems = document.querySelectorAll('.tab-item');
+if (!localStorage.activeTab) {
+  localStorage.activeTab = 'tab-1';
+}
 var element = document.querySelector("[data-tab=\"".concat(localStorage.activeTab, "\"]"));
 element === null || element === void 0 ? void 0 : element.classList.add('active');
 var activatedTab = (_document$querySelect = document.querySelector("#".concat(localStorage.activeTab))) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.classList.add('active');
